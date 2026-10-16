@@ -1,0 +1,16 @@
+{
+  "name": "conversor-png-pdf",
+  "version": "1.0.0",
+  "description": "Este aplicativo foi desenvolvido especialmente para ser muito simples, intuitivo e com visual acessível para pessoas com pouca familiaridade com tecnologia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jszip": "^3.10.2",
+    "pdf-lib": "^1.17.1"
+  }
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="pdfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Subtle glow -->
+  <circle cx="256" cy="120" r="140" fill="#ffffff" opacity="0.12"/>
+
+  <!-- Photo Card (representing PNG image) -->
+  <g transform="translate(90, 110) rotate(-6)" filter="url(#shadow)">
+    <rect width="210" height="260" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="6"/>
+    <!-- Photo landscape -->
+    <rect x="20" y="20" width="170" height="150" rx="12" fill="#e0f2fe"/>
+    <circle cx="65" cy="65" r="18" fill="#f59e0b"/>
+    <path d="M20 150 L80 90 L130 140 L160 115 L190 150 Z" fill="#10b981"/>
+    <!-- PNG Badge -->
+    <rect x="55" y="195" width="100" height="38" rx="10" fill="#2563eb"/>
+    <text x="105" y="222" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle">PNG</text>
+  </g>
+
+  <!-- PDF Document (representing output) -->
+  <g transform="translate(210, 150) rotate(4)" filter="url(#shadow)">
+    <rect width="220" height="270" rx="20" fill="#ffffff" stroke="#fecaca" stroke-width="6"/>
+    <!-- Top folded corner -->
+    <path d="M160 0 L220 60 L160 60 Z" fill="#fee2e2"/>
+    <!-- PDF Badge -->
+    <rect x="25" y="30" width="110" height="42" rx="10" fill="url(#pdfGrad)"/>
+    <text x="80" y="60" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle">PDF</text>
+    <!-- Document lines -->
+    <rect x="25" y="100" width="170" height="12" rx="6" fill="#cbd5e1"/>
+    <rect x="25" y="128" width="140" height="12" rx="6" fill="#e2e8f0"/>
+    <rect x="25" y="156" width="160" height="12" rx="6" fill="#e2e8f0"/>
+    <!-- Embedded check/sparkle -->
+    <circle cx="110" cy="215" r="32" fill="#10b981"/>
+    <path d="M98 215 L106 223 L124 205" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Fast arrow between them -->
+  <g transform="translate(230, 240)">
+    <circle cx="26" cy="26" r="30" fill="#ffffff" filter="url(#shadow)"/>
+    <path d="M16 26 L36 26 M28 18 L36 26 L28 34" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
